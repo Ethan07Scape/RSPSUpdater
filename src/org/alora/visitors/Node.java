@@ -18,7 +18,7 @@ public class Node extends GraphVisitor {
     private Searcher search;
     private AbstractInsnNode[] instructions;
     private FieldInsnNode fin;
-    
+
     @Override
     public boolean validate(ClassNode cn) {
         return isNodeClass(cn);
@@ -53,9 +53,9 @@ public class Node extends GraphVisitor {
     }
 
     private boolean isNodeClass(ClassNode cn) {
-        if(cn.ownerless() && cn.fieldCount("J") >= 1) {
-            if(cn.fieldCount("L" + cn.name + ";") == 2) {
-            return true;
+        if (cn.ownerless() && cn.fieldCount("J") >= 1) {
+            if (cn.fieldCount("L" + cn.name + ";") == 2) {
+                return true;
             }
         }
         return false;
