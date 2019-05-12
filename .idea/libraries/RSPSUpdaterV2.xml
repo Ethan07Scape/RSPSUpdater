@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="RSPSUpdaterV2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../RSPSUpdaterV2/out/artifacts/RSPSUpdaterV2_jar/RSPSUpdaterV2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
