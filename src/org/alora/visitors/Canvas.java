@@ -4,7 +4,7 @@ import org.ethan.analyze.visitor.GraphVisitor;
 import org.ethan.analyze.visitor.VisitorInfo;
 import org.objectweb.asm.tree.ClassNode;
 
-@VisitorInfo(hooks = {})
+@VisitorInfo(hooks = {"dummyHook"})
 public class Canvas extends GraphVisitor {
 
 

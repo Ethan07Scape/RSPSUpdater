@@ -1,4 +1,4 @@
-package org.alora.visitors;
+package org.alora.visitors.nodes;
 
 
 import org.ethan.analyze.visitor.GraphVisitor;
