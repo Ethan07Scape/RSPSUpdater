@@ -54,9 +54,7 @@ public class Node extends GraphVisitor {
 
     private boolean isNodeClass(ClassNode cn) {
         if (cn.ownerless() && cn.fieldCount("J") >= 1) {
-            if (cn.fieldCount("L" + cn.name + ";") == 2) {
-                return true;
-            }
+            return cn.fieldCount("L" + cn.name + ";") == 2;
         }
         return false;
     }
