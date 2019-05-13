@@ -14,10 +14,7 @@ public class NpcDefinition extends GraphVisitor {
 
     @Override
     public boolean validate(ClassNode cn) {
-        if (cn.fieldCount("Z") >= 4 && cn.fieldCount("Z") < 7 && cn.methods.size() > 15) {
-            return true;
-        }
-        return false;
+        return cn.fieldCount("Z") >= 4 && cn.fieldCount("Z") < 7 && cn.methods.size() > 15;
     }
 
     @Override

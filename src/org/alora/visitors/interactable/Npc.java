@@ -10,9 +10,7 @@ public class Npc extends GraphVisitor {
     @Override
     public boolean validate(ClassNode cn) {
         if (cn.superName.equals(clazz("Character"))) {
-            if (!cn.name.equals(clazz("Player"))) {
-                return true;
-            }
+            return !cn.name.equals(clazz("Player"));
         }
         return false;
     }

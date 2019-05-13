@@ -16,11 +16,8 @@ public class NodeDeque extends GraphVisitor {
 
     @Override
     public boolean validate(ClassNode cn) {
-        if (cn.ownerless() && cn.interfaces.isEmpty() && cn.fields.size() < 5 &&
-                cn.fieldCount(desc("Node")) == 2 && cn.access == 48) {
-            return true;
-        }
-        return false;
+        return cn.ownerless() && cn.interfaces.isEmpty() && cn.fields.size() < 5 &&
+                cn.fieldCount(desc("Node")) == 2 && cn.access == 48;
     }
 
     @Override

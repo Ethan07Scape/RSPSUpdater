@@ -18,13 +18,7 @@ public class Player extends GraphVisitor {
     @Override
     public void visit() {
         add("actions", getCn().getField(null, "[Ljava/lang/String;"));
-        for (FieldNode fn : getCn().fields) {
-            if (fn.desc.equals("Ljava/lang/String;")) {
-                if (fn.access == 0) {
-                    add("name", fn);
-                    break;
-                }
-            }
-        }
+        FieldNode name = getFirstField(getCn(), fieldNode -> fieldNode.desc.equals("Ljava/lang/String;") && fieldNode.access == 0);
+        add("name", name);
     }
 }
