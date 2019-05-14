@@ -31,7 +31,7 @@ public class Core extends Server {
                 new Node(), new CacheableNode(), new RenderableNode(), new Canvas(),
                 new Animable(), new HashTable(), new Cache(), new NodeDeque(),
                 new LinkedList(), new AnimationSequence(), new Character(), new NpcDefinition(), new Player(), new Npc(),
-                new Item(), new ItemDefinition(), new InteractableObject(), new Boundary(), new Tile(), new Region()
+                new Item(), new ItemDefinition(), new InteractableObject(), new Boundary(), new Tile(), new Region(), new Widget()
         };
     }
 
